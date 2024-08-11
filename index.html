@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Books, Libros, Livros </title>
+    <style>
+        body { 
+          color: white;
+          font-family: Arial, sans-serif;
+          font-style: italic;
+          text-align: left;     
+          background-image: url('/static/images/Robot_reading3.jpg');
+          background-repeat: no-repeat; 
+          background-size: 1500px 1100px;
+
+        }
+        nav {
+          position: absolute;
+          top: 0;
+          right:0;
+          padding:40px;
+        }
+
+        nav ul {
+          list-style:none;
+          margin:0;
+          padding:0;
+        }
+
+        nav ul li {
+          display: inline;
+        }
+
+        nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-weight:bold;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .Key_Words {
+            text-align: left;
+
+        }
+        {
+          box-sizing:border-box;
+
+        }
+
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        .Welcome {
+          text-align: right;
+        }
+
+    </style>
+    
+    <head>
+    <body>
+      <body class:.Welcome>
+        <h3> Welcome to my work in progress project where I train a machine to provide book recommendations based on other books.</h3>
+    </body>
+    </head>
+
+
+<div class="row">
+  <div class="column" >
+    <h3>Generate a new book</h3>
+    <form action="/submit" method="post">
+      
+      <label for="Title"><strong>Title:</strong></label>
+      <input type="text" id="Title" name="Title" required><br><br>
+
+      <label for="Author"><strong>Author:</strong></label>
+      <input type="text" id="Author" name="Author" required><br><br>
+
+      <label for="Genre"><strong>Genre:</strong></label>
+      <input type="text" id="Genre" name="Genre" required><br><br>
+
+      <label for="Rating (1-5)"><strong>Rating (1-5):</strong></label>
+      <input type="number" id="Rating" name="Rating(1-5)" required><br><br>
+
+      <input type="Submit" value="Submit">
+  </form>
+  </div>
+  <div class="column">
+    <h3>Examples you can use</h3>
+    <table>
+      <tr>
+        <th>BOOK TITLE</th>
+        <th>AUTHOR</th>
+        <th>GENRE</th>
+        <th>RATING</th>
+        
+      </tr>
+      <tr>
+          <td style= "white-space: nowrap;">The Hope We Seek</td>
+          <td style="white-space:nowrap;">Rich Shapero</td>
+          <td>Fiction</td>
+          <td>1</td>
+          
+      </tr>
+      <tr> 
+          <td>The Last Word</td>
+          <td>Taylor Adams</td>
+          <td>Thriller</td>
+          <td>1</td>
+          
+      </tr>
+      <tr>
+        <td style="word-wrap: break-word; max-width: 200px;"> Alacatraz From Inside</td>
+        <td>Jim Quillen</td>
+        <td>Biography</td>
+        <td>5</td>
+        
+      </tr>  
+      <tr>
+        <td>Peach Blossom Debt</td>
+        <td style="white-space:nowrap;">Da Feng Gua Guo</td>
+        <td>Fiction-Fantasy</td>
+        <td>5</td>
+        
+
+      </tr>
+      <tr>
+        <td>The Tea Girl of Hummingbird Lane</td>
+        <td>Lisa See</td>
+        <td>Fiction-Historical</td>
+        <td>3</td>
+
+
+    <tr>
+      <td>The Body Keeps the Score</td>
+      <td>Bessel van de Kolk</td>
+      <td>Self Help</td>
+      <td>5</td>
+    
+    </tr>
+
+    <tr>
+      <td>Quantum Physics Made Me Do It</td>
+      <td>Jeremie Harris</td>
+      <td>Science & Tech</td>
+      <td>5</td>
+      
+
+    <tr>
+      <td>Ultraviolet</td>
+      <td>R.J. Anderson</td>
+      <td>YA Science Fiction</td>
+      <td>2</td>
+     
+    </tr>  
+
+    </table>  
+        
+</body>
+</html>
+
+
+
+
