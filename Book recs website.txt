@@ -1,0 +1,9 @@
+ENVIRONMENT 
+lunamia@GoddessBri:~$ source book-recs-website/bin/activate
+(book-recs-website) lunamia@GoddessBri:~/book-recs-website$ python app.py -- RUN fLASK
+
+in order to see website: (book-recs-website) lunamia@GoddessBri:~/book-recs-website/BACK-END$ python3 app.py
+
+NEED TO SWITCH TO A PRODUCTION SERBER BEFORE PUBLISHING FOR ADDED SECURITY 
+
+
