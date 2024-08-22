@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Books List</title>
+</head>
+<body>
+    <h1>Books List</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Rating</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.id }}</td>
+            <td>{{boook.Title}}</td>
+            <td>{{book.Author}}</td>
+            <td>{{book.Genre}}</td>
+            <td>{{'Yes' if book.liked else 'No' }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+        <a href="{{ url_for('home')}}">Add More Books</a>
+</body>
+</html>
